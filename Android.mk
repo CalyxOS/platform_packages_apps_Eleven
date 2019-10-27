@@ -35,7 +35,17 @@ else
     LOCAL_PROGUARD_ENABLED := disabled
 endif
 
+LOCAL_REQUIRED_MODULES := privapp-permissions-eleven.xml
+
 include $(BUILD_PACKAGE)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := privapp-permissions-eleven.xml
+LOCAL_MODULE_CLASS := ETC
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/permissions
+LOCAL_SRC_FILES := $(LOCAL_MODULE)
+include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 include $(BUILD_MULTI_PREBUILT)
