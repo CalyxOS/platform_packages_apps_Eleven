@@ -45,6 +45,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.WorkerThread;
+import androidx.fragment.app.FragmentActivity;
 
 import org.lineageos.eleven.BuildConfig;
 import org.lineageos.eleven.Config.IdType;
@@ -868,6 +869,9 @@ public final class MusicUtils {
         if (BuildConfig.DEBUG) {
             Log.d(TAG, "getIdForPlaylist(" + name + ")");
         }
+        if (name == null) {
+            return -1;
+        }
 
         try (Cursor cursor = context.getContentResolver().query(Playlists.EXTERNAL_CONTENT_URI,
                 new String[]{BaseColumns._ID}, PlaylistsColumns.NAME + "=?",
@@ -909,6 +913,9 @@ public final class MusicUtils {
      * @return The ID for an artist.
      */
     public static long getIdForArtist(final Context context, final String name) {
+        if (name == null) {
+            return -1;
+        }
         try (Cursor cursor = context.getContentResolver().query(
                 MediaStore.Audio.Artists.EXTERNAL_CONTENT_URI, new String[]{BaseColumns._ID},
                 ArtistColumns.ARTIST + "=?", new String[]{name}, ArtistColumns.ARTIST)) {
@@ -1610,7 +1617,7 @@ public final class MusicUtils {
      * Removes the header image from the cache.
      */
     @WorkerThread
-    public static void removeFromCache(Activity activity, String key) {
+    public static void removeFromCache(FragmentActivity activity, String key) {
         ImageFetcher imageFetcher = ElevenUtils.getImageFetcher(activity);
         imageFetcher.removeFromCache(key);
 
@@ -1622,7 +1629,7 @@ public final class MusicUtils {
     /**
      * Removes image from cache so that the stock image is retrieved on reload
      */
-    public static void selectOldPhoto(Activity activity, String key) {
+    public static void selectOldPhoto(FragmentActivity activity, String key) {
         // First remove the old image
         removeFromCache(activity, key);
         MusicUtils.refresh();

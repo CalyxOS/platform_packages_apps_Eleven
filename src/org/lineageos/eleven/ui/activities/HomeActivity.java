@@ -17,12 +17,9 @@
 package org.lineageos.eleven.ui.activities;
 
 import android.Manifest;
-import android.animation.Animator;
 import android.animation.ArgbEvaluator;
 import android.animation.ObjectAnimator;
-import android.animation.ValueAnimator;
 import android.app.ActionBar;
-import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -283,6 +280,12 @@ public class HomeActivity extends SlidingPanelActivity implements
             final String action = intent.getAction();
             Fragment targetFragment = null;
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+            transaction.setCustomAnimations(
+                    androidx.fragment.R.anim.fragment_open_enter,
+                    androidx.fragment.R.anim.fragment_open_exit,
+                    androidx.fragment.R.anim.fragment_fade_enter,
+                    androidx.fragment.R.anim.fragment_fade_exit);
 
             if (action.equals(ACTION_VIEW_SMART_PLAYLIST)) {
                 long playlistId = intent.getExtras().getLong(Config.SMART_PLAYLIST_TYPE);
