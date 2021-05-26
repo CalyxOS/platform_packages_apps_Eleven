@@ -16,7 +16,7 @@
 package org.lineageos.eleven;
 
 public final class BuildConfig {
-    public static final String APPLICATION_ID = "org.lineageos.eleven";
+    public static final String APPLICATION_ID = "org.calyxos.eleven";
 
     public static final boolean DEBUG = Boolean.parseBoolean("false");
 }

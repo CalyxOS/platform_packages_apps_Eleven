@@ -50,13 +50,18 @@ android_app {
         enabled: false,
     },
 
-    required: ["privapp_whitelist_org.lineageos.eleven"],
+    required: ["privapp_whitelist_org.calyxos.eleven"],
+
+    aaptflags: [
+        "--rename-manifest-package",
+        "org.calyxos.eleven",
+    ],
 }
 
 prebuilt_etc {
-    name: "privapp_whitelist_org.lineageos.eleven",
+    name: "privapp_whitelist_org.calyxos.eleven",
     product_specific: true,
-    src: "privapp_whitelist_org.lineageos.eleven.xml",
+    src: "privapp_whitelist_org.calyxos.eleven.xml",
     sub_dir: "permissions",
     filename_from_src: true,
 }
