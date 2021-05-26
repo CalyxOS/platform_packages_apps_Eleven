@@ -16,10 +16,10 @@
 -->
 <permissions>
     <!-- Compatibility for upgrades from old package name -->
-    <privapp-permissions package="com.cyanogenmod.eleven">
+    <privapp-permissions package="org.lineageos.eleven">
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
-    <privapp-permissions package="org.lineageos.eleven">
+    <privapp-permissions package="org.calyxos.eleven">
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 </permissions>
