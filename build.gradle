@@ -39,7 +39,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "org.lineageos.eleven"
+        applicationId "org.calyxos.eleven"
 
         minSdkVersion 28
         targetSdkVersion 31
