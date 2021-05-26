@@ -29,9 +29,9 @@
     <!-- Android Studio will complain about not being able to
          resove the symbol, but it compiles with no problem.
          Do not remove for as long as there are officially supported
-         devices that were supported in 14.1 -->
+         devices that were supported in Android 11 -->
     <!-- suppress AndroidElementNotAllowed -->
-    <original-package android:name="com.cyanogenmod.eleven" />
+    <original-package android:name="org.lineageos.eleven" />
 
     <!-- Used for caching and creating new playlists -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -103,7 +103,7 @@
                 <data android:mimeType="vnd.android.cursor.dir/artists" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.lineageos.eleven.AUDIO_PLAYER" />
+                <action android:name="org.calyxos.eleven.AUDIO_PLAYER" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
