@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd7813f1_14df25d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-03-25T12:19:45Z",
+      "side": 1,
+      "message": "Could also cherry pick if it\u0027s just one commit but this is fine too for consistency.",
+      "revId": "43aad4c91493b1692f24bc4ad69e34b40aba6ee0",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
