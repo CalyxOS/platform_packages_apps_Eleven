@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03f00b0c_5c10dde8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2022-04-19T19:16:53Z",
+      "side": 1,
+      "message": "Text says Equalizer, and it launches the app just like the icon did.",
+      "revId": "3c0f727686e12d9ec95c9ead1d13cd2cc36f7d7c",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
