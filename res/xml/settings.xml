@@ -20,6 +20,14 @@
 
     <PreferenceCategory android:title="@string/settings_general_category" >
 
+        <PreferenceScreen
+            android:key="equalizer"
+            android:title="@string/menu_equalizer">
+            <intent android:action="android.intent.action.MAIN"
+                    android:targetPackage="org.lineageos.audiofx"
+                    android:targetClass="org.lineageos.audiofx.activity.ActivityMusic" />
+        </PreferenceScreen>
+
         <!-- Music visualizer -->
         <SwitchPreference
             android:defaultValue="false"
