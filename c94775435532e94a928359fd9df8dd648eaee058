@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fde5f451_fa3b8036",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000062
+      },
+      "writtenOn": "2022-12-16T18:21:33Z",
+      "side": 1,
+      "message": "Successfully adds Equalizer link to Eleven\u0027s settings. Equalizer works. (bramble)",
+      "revId": "c94775435532e94a928359fd9df8dd648eaee058",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
