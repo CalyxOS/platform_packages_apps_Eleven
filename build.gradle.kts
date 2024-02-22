@@ -31,7 +31,7 @@ android {
     namespace = "org.lineageos.eleven"
 
     defaultConfig {
-        applicationId = "org.lineageos.eleven"
+        applicationId = "org.calyxos.eleven"
         minSdk = 30
         targetSdk = 34
         versionCode = 420
