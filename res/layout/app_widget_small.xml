@@ -44,7 +44,8 @@
         android:background="?android:selectableItemBackgroundBorderless"
         android:contentDescription="@null"
         android:scaleType="centerCrop"
-        android:src="@drawable/btn_playback_play_widget"
+        android:src="@drawable/btn_playback_play"
+        android:tint="@color/material_dynamic_primary20"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <LinearLayout
@@ -59,20 +60,17 @@
         <TextView
             android:id="@+id/app_widget_line_one"
             style="@style/NotificationText"
-            android:textColor="@color/widget_text"
             android:textSize="@dimen/text_size_medium"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/app_widget_line_two"
             style="@style/NotificationText"
-            android:textColor="@color/widget_text"
             android:textSize="@dimen/text_size_small" />
 
         <TextView
             android:id="@+id/app_widget_line_three"
             style="@style/NotificationText"
-            android:textColor="@color/widget_text"
             android:textSize="@dimen/text_size_small" />
     </LinearLayout>
 </GridLayout>

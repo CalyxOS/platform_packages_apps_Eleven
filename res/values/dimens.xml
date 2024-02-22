@@ -36,7 +36,6 @@
     <dimen name="list_item_general_margin">16.0dip</dimen>
     <dimen name="list_item_padding_top">12.0dip</dimen>
     <dimen name="list_item_padding_bottom">12.0dip</dimen>
-    <dimen name="list_item_header_size">16.0sp</dimen>
     <dimen name="list_item_main_text_size">@dimen/text_size_small</dimen>
     <dimen name="list_item_secondary_text_size">@dimen/text_size_micro</dimen>
     <dimen name="list_item_queue_text_padding_left">15.0dip</dimen>
@@ -103,11 +102,7 @@
     <dimen name="header_bar_up_width">30.0dip</dimen>
     <dimen name="header_bar_menu_button_width">38.0dip</dimen>
     <dimen name="header_bar_button_height">48.0dip</dimen>
-
-    <!-- Title Page Indicator Settings -->
-    <dimen name="tpi_height">48dp</dimen>
-    <dimen name="tab_text_size">14sp</dimen>
-    <dimen name="tab_selected_underline_height">2dp</dimen>
+    <dimen name="header_bar_text_padding">12.0dip</dimen>
 
     <dimen name="list_item_progress_width">45.0dip</dimen>
     <dimen name="list_item_progress_height">45.0dip</dimen>
@@ -122,10 +117,6 @@
     <dimen name="no_results_text_padding_bottom">16.0dip</dimen>
     <dimen name="no_results_text_main">20.0sp</dimen>
     <dimen name="no_results_text_secondary">14.0sp</dimen>
-
-    <!-- General consensus is to leave dividers at 1px instead of having different
-    partial scaled up values for different resolutions -->
-    <dimen name="divider_height">1px</dimen>
 
     <item name="letter_to_tile_ratio" type="fraction">53%</item>
 

@@ -51,7 +51,8 @@
             android:contentDescription="@string/accessibility_prev"
             android:padding="@dimen/notification_expanded_button_padding"
             android:scaleType="centerCrop"
-            android:src="@drawable/btn_playback_previous_widget" />
+            android:src="@drawable/btn_playback_previous"
+            android:tint="@color/material_dynamic_primary20" />
 
         <ImageButton
             android:id="@+id/app_widget_large_play"
@@ -61,7 +62,8 @@
             android:contentDescription="@null"
             android:padding="@dimen/notification_expanded_button_padding"
             android:scaleType="centerCrop"
-            android:src="@drawable/btn_playback_play_widget" />
+            android:src="@drawable/btn_playback_play"
+            android:tint="@color/material_dynamic_primary20" />
 
         <ImageButton
             android:id="@+id/app_widget_large_next"
@@ -71,7 +73,8 @@
             android:contentDescription="@string/accessibility_next"
             android:padding="@dimen/notification_expanded_button_padding"
             android:scaleType="centerCrop"
-            android:src="@drawable/btn_playback_next_widget" />
+            android:src="@drawable/btn_playback_next"
+            android:tint="@color/material_dynamic_primary20" />
     </LinearLayout>
 
     <LinearLayout
@@ -87,20 +90,17 @@
         <TextView
             android:id="@+id/app_widget_line_one"
             style="@style/NotificationText"
-            android:textColor="@color/widget_text"
             android:textSize="@dimen/text_size_medium"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/app_widget_line_two"
             style="@style/NotificationText"
-            android:textColor="@color/widget_text"
             android:textSize="@dimen/text_size_small" />
 
         <TextView
             android:id="@+id/app_widget_line_three"
             style="@style/NotificationText"
-            android:textColor="@color/widget_text"
             android:textSize="@dimen/text_size_small" />
     </LinearLayout>
 </GridLayout>

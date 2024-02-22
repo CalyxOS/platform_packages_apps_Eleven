@@ -33,11 +33,13 @@ import android.os.Looper;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 
 import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.core.graphics.ColorUtils;
 import androidx.fragment.app.Fragment;
@@ -233,8 +235,6 @@ public class HomeActivity extends SlidingPanelActivity implements
                 handler.post(() -> {
                     updateVisualizerColor(bmc != null
                             ? bmc.getContrastingColor() : Color.TRANSPARENT);
-                    updateStatusBarColor(bmc != null
-                            ? bmc.getVibrantDarkColor() : Color.TRANSPARENT);
                 });
             });
         }
@@ -242,7 +242,7 @@ public class HomeActivity extends SlidingPanelActivity implements
 
     private void updateVisualizerColor(int color) {
         if (color == Color.TRANSPARENT) {
-            color = ContextCompat.getColor(this, R.color.visualizer_fill_color);
+            color = ContextCompat.getColor(this, android.R.color.white);
         }
 
         // check for null since updatestatusBarColor is a async task
@@ -254,7 +254,9 @@ public class HomeActivity extends SlidingPanelActivity implements
 
     private void updateStatusBarColor(int color) {
         if (color == Color.TRANSPARENT) {
-            color = ContextCompat.getColor(this, R.color.primary_dark);
+            TypedValue c = new TypedValue();
+            getTheme().resolveAttribute(R.attr.colorSurface, c, true);
+            color = ContextCompat.getColor(this, c.resourceId);
         }
         final boolean isDark = ColorUtils.calculateLuminance(color) > 0.5f;
         final Window window = getWindow();

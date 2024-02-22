@@ -34,6 +34,7 @@ import android.text.Html;
 import android.text.Spanned;
 import android.text.TextUtils;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -324,7 +325,7 @@ public class AudioPlayerFragment extends Fragment implements ServiceConnection {
         // Register the intent filters
         final FragmentActivity activity = getActivity();
         if (activity != null) {
-            activity.registerReceiver(mPlaybackStatus, filter);
+            activity.registerReceiver(mPlaybackStatus, filter, Context.RECEIVER_EXPORTED);
         }
         // Refresh the current time
         final long next = refreshCurrentTime();
@@ -363,7 +364,7 @@ public class AudioPlayerFragment extends Fragment implements ServiceConnection {
      * Initializes the header bar
      */
     private void initHeaderBar() {
-        mPlayerToolBar = mRootView.findViewById(R.id.audio_player_header);
+        mPlayerToolBar = mRootView.findViewById(R.id.audio_player_header_toolbar);
 
         // Title text
         mSongTitle = mRootView.findViewById(R.id.header_bar_song_title);
@@ -413,8 +414,9 @@ public class AudioPlayerFragment extends Fragment implements ServiceConnection {
     private void setupNoResultsContainer(NoResultsContainer empty) {
         final Context context = getContext();
         if (context != null) {
-            final int color = ContextCompat.getColor(getContext(), R.color.no_results_light);
-            empty.setTextColor(color);
+            TypedValue typedValue = new TypedValue();
+            context.getTheme().resolveAttribute(R.attr.colorOnPrimaryContainer, typedValue, true);
+            empty.setTextColor(typedValue.data);
         }
         empty.setMainText(R.string.empty_queue_main);
         empty.setSecondaryText(R.string.empty_queue_secondary);

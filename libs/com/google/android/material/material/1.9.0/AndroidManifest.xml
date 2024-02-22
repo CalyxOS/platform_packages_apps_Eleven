@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2014 The CyanogenMod Project
+ Copyright (C) 2015 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,13 +14,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-       android:insetLeft="@dimen/drag_and_drop_width"
-       android:insetRight="@dimen/list_preferred_item_padding" >
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.material" >
 
-    <shape>
-        <solid android:color="@color/list_item_divider_color_light" />
-        <corners android:radius="1.0dip" />
-    </shape>
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="33" />
 
-</inset>
+    <application />
+
+</manifest>
