@@ -16,6 +16,24 @@
       "message": "Could do the same for Twelve",
       "revId": "f416f9ec788bc5179c6c3148fee862d9d1896f31",
       "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a66a5b35_45ec9772",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000004
+      },
+      "writtenOn": "2025-01-15T21:56:38Z",
+      "side": 1,
+      "message": "Twelve has an equalizer button in the player, so that\u0027s already better",
+      "parentUuid": "a152f73f_404bea0c",
+      "revId": "f416f9ec788bc5179c6c3148fee862d9d1896f31",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
     }
   ]
 }
