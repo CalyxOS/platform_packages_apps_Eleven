@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a152f73f_404bea0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000000
+      },
+      "writtenOn": "2025-01-15T21:08:25Z",
+      "side": 1,
+      "message": "Could do the same for Twelve",
+      "revId": "f416f9ec788bc5179c6c3148fee862d9d1896f31",
+      "serverId": "35266860-6252-469c-a67d-185064479fc0"
+    }
+  ]
+}
